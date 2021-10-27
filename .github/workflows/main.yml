@@ -1,0 +1,36 @@
+# This is a basic workflow to help you get started with Actions
+
+name: APISEC Asif
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: APIsec Scan
+        uses: apisec-inc/apisec-run-scan@v1.0.3
+        with:
+          # The APIsec username with which the scans will be executed
+          apisec-username: ${{ secrets.USERNAME }}
+          # The Password of the APIsec user with which the scans will be executed
+          apisec-password: ${{ secrets.PASSWORD }}
+           # The id of the project for security scan
+          apisec-project: "newbanking-app"
+          apisec-region: "FXLabs/US_WEST_1"
+          apisec-profile: "Master"
+

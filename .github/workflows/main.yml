@@ -31,6 +31,6 @@ jobs:
           apisec-password: ${{ secrets.PASSWORD }}
            # The id of the project for security scan
           apisec-project: "newbanking-app"
-          apisec-region: "FXLabs/US_WEST_1"
+          apisec-region: "APIsec/US_WEST_1"
           apisec-profile: "Master"
 

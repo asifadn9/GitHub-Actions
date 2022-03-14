@@ -31,5 +31,5 @@ jobs:
           apisec-password: ${{ secrets.PASSWORD }}
            # The id of the project for security scan
           apisec-project: "NB"
-          apisec-region: "Super_1"
+          apisec-region: "Super_2"
           apisec-profile: "Master"

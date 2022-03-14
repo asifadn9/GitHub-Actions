@@ -30,7 +30,6 @@ jobs:
           # The Password of the APIsec user with which the scans will be executed
           apisec-password: ${{ secrets.PASSWORD }}
            # The id of the project for security scan
-          apisec-project: "NB"
-          apisec-region: "APIsec/US_WEST_1"
+          apisec-project: "NB 4"
+          apisec-region: "lap-k8s"
           apisec-profile: "Master"
-

@@ -22,7 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: APIsec scan 
+      - name: APIsec Scan 
         id: scan 
         uses: apisec-inc/apisec-run-scan@v1.0.4 
         with: 

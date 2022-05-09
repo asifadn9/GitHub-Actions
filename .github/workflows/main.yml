@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: APIsec scan 
         id: scan 
-        uses: apisec-inc/apisec-run-scan@v1.0.3 
+        uses: apisec-inc/apisec-run-scan@v1.0.4 
         with: 
           apisec-username: $❴❴ secrets.USERNAME ❵❵ 
           apisec-password: $❴❴ secrets.PASSWORD ❵❵ 

@@ -26,8 +26,8 @@ jobs:
         id: scan 
         uses: apisec-inc/apisec-run-scan@v1.0.3 
         with: 
-          apisec-username: $❴❴ secrets.apisec_username ❵❵ 
-          apisec-password: $❴❴ secrets.apisec_password ❵❵ 
+          apisec-username: $❴❴ secrets.APISEC_USERNAME ❵❵ 
+          apisec-password: $❴❴ secrets.APISEC_PASSWORD ❵❵ 
           apisec-project:  NB
           apisec-profile:  Master
           apisec-region:   Super_1

@@ -24,7 +24,7 @@ jobs:
     steps:
         - name: APIsec Scan 
           id : scan
-          uses: apisec-inc/apisec-run-scan@v1.0.4
+          uses: apisec-inc/apisec-run-scan@v1.0.5
           with: 
             apisec-username: "muqeet@apisec.ai" 
             apisec-password: "apisec@123"

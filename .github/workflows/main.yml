@@ -28,6 +28,6 @@ jobs:
           with: 
             apisec-username: "muqeet@apisec.ai" 
             apisec-password: "apisec@123"
-            apisec-project:  "Cors"
-            apisec-region:   "Super_1"
+            apisec-project:  "NBT"
+            apisec-region:   "Super_3"
             apisec-profile:  "Master"

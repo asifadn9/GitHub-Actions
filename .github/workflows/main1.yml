@@ -1,0 +1,17 @@
+- name: APIsec Scan
+  # You may pin to the exact commit or the version.
+  # uses: apisec-inc/apisec-run-scan@f748a240d69ca6cd7e9532fd0a47bec4ccd6a73c
+  uses: apisec-inc/apisec-run-scan@v1.0.5
+  with:
+    # The APIsec username with which the scans will be executed
+    apisec-username: # default is 
+    # The Password of the APIsec user with which the scans will be executed
+    apisec-password: # default is 
+    # The Name of the project for security scan
+    apisec-project: # default is 
+    # The Name of the scan profile to be executed
+    apisec-profile: # optional, default is Master
+    # The location the scan will be executed in
+    apisec-region: # optional, default is 
+    # The path to the sarif format result file
+    sarif-result-file: # optional, default is 

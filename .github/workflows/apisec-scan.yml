@@ -55,7 +55,7 @@ jobs:
 
     steps:
        - name: APIsec scan
-         uses: apisec-inc/apisec-run-scan@v1.0.5
+         uses: apisec-inc/apisec-run-scan@ec62e3a70c3bb1e6df963942b86960e9c06a863e
          with:
           # The APIsec username with which the scans will be executed
           apisec-username: "muqeet@apisec.ai"

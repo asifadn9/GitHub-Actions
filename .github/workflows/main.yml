@@ -28,6 +28,6 @@ jobs:
           with: 
             apisec-username: "muqeet@apisec.ai" 
             apisec-password: "apisec@123"
-            apisec-project:  "Test URL"
+            apisec-project:  "github"
             apisec-region:   "Super_2"
             apisec-profile:  "Master"

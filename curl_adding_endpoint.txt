@@ -1,0 +1,46 @@
+---curl cmd example starts---
+
+curl --location --request POST '<<add pointing Host>> ' --header 'Authorization: Bearer <<add Bearer token>>' --header 'Content-Type: application/json' --data-raw '[
+  {
+        "endpoint": "/api/v1/primary-transaction/{id}",
+        "method": "get",
+        "pathDependency":"id",
+        "queryDependency": ""
+    },
+      {
+        "endpoint": "/api/v1/orgs/{id}/users",
+        "method": "get",
+        "pathDependency":"id",
+        "queryDependency": "page,pageSize"
+    
+]'
+
+---curl cmd example ends---
+
+To-do
+
+Step1: <<add pointing Host>> Ex: https://developer.apisec.ai/api/v1/endpoint/add-to-spec-file/8aa08088839dda5a01839dfcef8b290d
+Step2: <<add Bearer token>> EX: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKQVZBIHRlYW0vL211cXRhYXJAYXBpc2VjLmFpIiwic2NvcGVzIjoi
+Step3: modify the request body as per requirement
+
+https://developer.apisec.ai/api/v1/endpoint/add-to-spec-file/8aa08088838c58f201838d01a62b2ed9
+
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lmQGFwaXNlYy5haSIsInNjb3BlcyI6IlJPTEVfVVNFUixST0xFX1BST0pFQ1RfTUFOQUdFUixST0xFX0FETUlOLFJPTEVfRU5URVJQUklTRV9BRE1JTiIsImlhdCI6MTY2NDg2MzMyMSwiZXhwIjoxNjY0OTQ5NzIxfQ.jTxRz4Q1g4xPqXZIizonMyAs56A2okqyjLHUukhGIUw
+
+
+
+curl --location --request POST 'https://developer.apisec.ai/api/v1/endpoint/add-to-spec-file/8aa08088838c58f201838d01a62b2ed9' --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2lmQGFwaXNlYy5haSIsInNjb3BlcyI6IlJPTEVfVVNFUixST0xFX1BST0pFQ1RfTUFOQUdFUixST0xFX0FETUlOLFJPTEVfRU5URVJQUklTRV9BRE1JTiIsImlhdCI6MTY2NDg2MzMyMSwiZXhwIjoxNjY0OTQ5NzIxfQ.jTxRz4Q1g4xPqXZIizonMyAs56A2okqyjLHUukhGIUw' --header 'Content-Type: application/json' --data-raw '[
+  {
+        "endpoint": "/api/v1/primary-transaction/{id}",
+        "method": "get",
+        "pathDependency":"id2",
+        "queryDependency": ""
+    },
+      {
+        "endpoint": "/api/v1/orgs/{id}/users",
+        "method": "put",
+        "pathDependency":"id3",
+        "queryDependency": "page,pageSize"
+    
+]'
+
